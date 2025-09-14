@@ -2,7 +2,7 @@ GET http://localhost:5002/games
 
 ###
 
-GET http://localhost:5002/games/6
+GET http://localhost:5002/games/1
 
 ###
 
@@ -10,24 +10,24 @@ POST http://localhost:5002/games
 Content-Type: application/json
 
 {
-  "name": "Elden Ring",
-  "genre": "Action RPG",
+  "name": "Elden Ring 3",
+  "genreId": 2,
   "price": 59.99,
   "releaseDate": "2022-02-25T00:00:00"
 }
 
 ###
 
-PUT http://localhost:5002/games/6
+PUT http://localhost:5002/games/8
 Content-Type: application/json
 
 {
   "name": "Elden Ring Updated",
-  "genre": "Action RPG",
+  "genreId": 1,
   "price": 49.99,
   "releaseDate": "2022-02-25T00:00:00"
 }
 
 ###
 
-DELETE http://localhost:5002/games/8
+DELETE http://localhost:5002/games/12
